@@ -29,8 +29,12 @@ for (let valores in d[i]){
 // funcion flecha 
 let dimencion = [[20,21,22,23,24,25],[26,27,28]];
 let valores = () =>{
-  
-}
+  for(let i in dimencion){
+    for(let p in A[i]){
+     console.log(`${p}=${dimencion[i][p]}`);
+    }
+  }
+};
 // while
 // for each 
 
