@@ -49,7 +49,13 @@ while (j <dim[j].length){
   j++;
 }
 // for each 
+let pers = [[38,39,40,41,42,43],[44,45,46]]
 
+pers.forEach((obj,j) =>{
+  obj.forEach((elem,p) => {
+    console.log(`${p}=${elem}`);
+  });
+});
 // Estructura de control parser
 let a=4;
 let b=5;
