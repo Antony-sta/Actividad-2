@@ -1,15 +1,14 @@
 // realizar un areglo con dos dimenciones y guardar dos arreglos internos y dar lectura a los internos 
-let c=[[3,4,5,6],[7,8,9]];
+let dimension=[[3,4,5,6],[7,8,9]];
     
-const datosArreglo=()=>{
-c.map((datos,index)=>{
+const datosArreglo=()=>
+dimension.map((datos,index)=>{
   datos.map((valores,i)=>{
 
     console.log(`${i}=${valores}`);
   })
 });
   
-}
     
 
 // for of 
@@ -21,7 +20,17 @@ for (let fil of A);{
    }
 }
 // for in 
+let d=[[11,12,13,14,15,16],[17,18,19]]
+
+for(let i in d)
+for (let valores in d[i]){
+  console.log(`${valores}=${d[i][valores]}`);
+}
 // funcion flecha 
+let dimencion = [[20,21,22,23,24,25],[26,27,28]];
+let valores = () =>{
+  
+}
 // while
 // for each 
 
