@@ -28,6 +28,7 @@ for (let valores in d[i]){
 }
 // funcion flecha 
 let dimencion = [[20,21,22,23,24,25],[26,27,28]];
+
 let valores = () =>{
   for(let i in dimencion){
     for(let p in A[i]){
@@ -36,6 +37,17 @@ let valores = () =>{
   }
 };
 // while
+let dim =[[29,30,31,32,33,34],[35,36,37,38]]
+
+let j = 0;
+while (j <dim[j].length){
+  let p = 0;
+  while (p <dim[j].length){
+    console.log(`${dim[j][p]}`);
+    p++;
+  }
+  j++;
+}
 // for each 
 
 // Estructura de control parser
