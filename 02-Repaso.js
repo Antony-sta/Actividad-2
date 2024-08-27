@@ -56,6 +56,18 @@ pers.forEach((obj,j) =>{
     console.log(`${p}=${elem}`);
   });
 });
+//do-while
+let dimen = [[28,29,30,31,32],[32,33,34]]
+let f = 0;
+
+do{
+  let p = 0;
+  do{
+    console.log(`${p}=${dimen[f][p]}`);
+    p++;
+  } while (p < dimen[f].length);
+ f++;
+} while (f <dimen.length);
 // Estructura de control parser
 let a=4;
 let b=5;
