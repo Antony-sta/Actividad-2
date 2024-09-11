@@ -142,3 +142,37 @@ persona(); */
 
 //Examen 4
 
+const prompt = require("prompt-sync")();
+
+const Empleado = (nombre, apellido, trabajo) => ({
+    nombre,
+    apellido,
+    trabajo,
+    saluda: () => {
+        const promedio = 8;
+        const sueldo = 2500;
+        const subir = sueldo + (sueldo * 0.15);
+        if (trabajo > promedio) {
+            console.log(`Hola ${nombre} tu sueldo es de ${subir}`);
+        } else {
+            console.log(`Hola ${nombre} tu sueldo es de ${sueldo}`);
+        }
+    }
+});
+
+const person =() => {
+    const contratar = parseInt(prompt("cuantos empleados"));
+    const empleados= [];
+
+    for (let i = 0; i < contratar; i++) {
+        empleados.push(empleados(
+            prompt(`nombre`),
+            prompt(`apellidos`),
+          parseInt(prompt (`horas trabajadas:`))
+        ))
+    }
+    for(let index in empleados){
+        const empleados = empleados[index];
+        empleados.saludar();
+    }
+};
