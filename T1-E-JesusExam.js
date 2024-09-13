@@ -57,8 +57,8 @@ const cliente = new client();
 cliente.RegistrClient()
 cliente.EliminDeudor() */
 
-//
-const prompt = require ("prompt-sync")()
+// Control de Películas Registro de películas (número de película, titulo, clasificación, estado: disponible o rentada, tipo: estreno o catálogo). 
+/* const prompt = require ("prompt-sync")()
 
 class Client {
     constructor(titul, Numer, Clasificacion, Dispon, Tip){
@@ -121,4 +121,59 @@ clientes.EliminarDeudor();
 
 let star = new cine();
 star.consulta ();
-star.Eliminarpeli();
+star.Eliminarpeli(); */
+
+//Control de Rentas
+const prompt = require("prompt-sync")()
+
+class Cliente {
+    constructor(Membresia, Nombre, Direccion, Telefono, Estado) {
+        this._membresia = Membresia;
+        this._nombre = Nombre;
+        this._direccion = Direccion;
+        this._telefono = Telefono;
+        this._estado = Estado;
+        this._consulta = []
+
+        registroCliente() {
+            let valorar = parseInt(prompt("Ingrese la cantidad de personas para registrar: "));
+            for (let i = 0; i < valorar; i++) {
+                this._nombre = prompt("Ingrese su nombre: ");
+                this._estado = prompt(`Cual es tu estado (1. Deudor), (2. libre )`) 
+                switch (parseInt(this._estado)) {
+                    case 1:
+                        this._estado = 'Deudor';
+                        break;
+                    case 2:
+                        this._estado = 'Libre';
+                        break;
+                }
+            }
+        }
+    }
+}
+
+}
+let datos = {
+    nombre: this._nombre,
+    membresia: this._membresia,
+    direccion: this._direccion,
+    telefono: this._telefono,
+    estado: this._estado
+}
+this._consulta.push(datos)
+}
+}
+
+
+eliminarDeudor() {
+for (let i = 0; i < this._consulta.length; i++) {
+if (this._consulta[i].estado === 'Deudor') {
+    this._consulta.slice(i, 1);
+    console.log(`Cliente ${this._consulta[i].nombre} con membrecia  has sido dado de baja `);
+
+} else {
+    console.log(`Cliente ${this._consulta[i].nombre} con membrecia sin libre de multa `);
+}
+}
+}
