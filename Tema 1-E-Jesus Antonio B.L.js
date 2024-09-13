@@ -144,7 +144,7 @@ persona(); */
 
 const prompt = require("prompt-sync")();
 
-const Empleado = (nombre, apellido, trabajo) => ({
+const empleado = (nombre, apellido, trabajo) => ({
     nombre,
     apellido,
     trabajo,
@@ -169,7 +169,7 @@ const person =() => {
             prompt(`nombre`),
             prompt(`apellidos`),
           parseInt(prompt (`horas trabajadas:`))
-        ))
+        ));
     }
     for(let index in empleados){
         const empleados = empleados[index];
