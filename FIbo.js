@@ -22,9 +22,11 @@ console.log(Fibo(5)) */
     }
     Fibo(6)   */
 
-    function Fibo(n){
-      if(n<2) return
-      return Fibo(n-1)+Fibo(n-2)
+    function Fib (n){
+      if (n<2) return n;
+      return Fib ( n - 1) + Fib (n - 2);
             
             }
-         console.log()
+            for(let i =0; i <=5; i++){
+         console.log(Fib(i));
+            }
