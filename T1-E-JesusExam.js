@@ -3,7 +3,7 @@
 
 class client {
     constructor(Numeromembresia, Nom, direccio, tel){
-        this._Numreromembresia = Numeromembresia,
+        this._Numreromembresia = Numeromembresia, // REFERENCIA Y ENCAPSULAMIENTO ES LA PROPIEDAD
         this._Nom = Nom,
         this._direccio = direccio,
         this._tel = tel,
@@ -152,7 +152,7 @@ class Cliente {
                         break;
                 }
         }
-
+    
     
 let datos = {
     Nom: this._Nom,
