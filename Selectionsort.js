@@ -1,4 +1,4 @@
-// Selection sort  recursiva y no recursiva
+  // Selection sort  recursiva y no recursiva
 function selectionSortRecursive(arr, startIndex = 0) {
     if (startIndex >= arr.length - 1) {
         return arr;
