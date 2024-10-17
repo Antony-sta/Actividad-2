@@ -1,7 +1,7 @@
 import "./App.css";
 import Otro from "./Otro";
+import Formulariocss from "./Formulariocss";
 import Formularioboot from "./components/Formularioboot";
-import Formulariocss from "./formulariocss";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <h1>Hola</h1>
       <Otro />
-      <Formulariocss/>
+      <Formulariocss />
       <div className="container-fluid p-3 ">
         <Formularioboot />
       </div>
