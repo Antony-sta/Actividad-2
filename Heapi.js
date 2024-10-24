@@ -36,3 +36,4 @@ const arr = [2, 11, 13, 5, 6, 7, 22, 34, 66];
 console.log("Array original:", arr);
 heapSort(arr);
 console.log("Array ordenado:", arr);
+

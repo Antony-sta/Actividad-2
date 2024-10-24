@@ -7,10 +7,5 @@ form{
    padding: 16px;
    border-radius: 10px;
    margin: auto;
-   background-color: #ccc;
-}
-
-form label{
-  width: 72px;
-  font-wei
+   background-color: yellowgreen
 }
