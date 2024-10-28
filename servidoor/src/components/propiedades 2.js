@@ -1,11 +1,10 @@
-import React from "react" 
+import React from 'react'
 
-function propiedades2(props) {
+function Propiedades2(props) {
     console.log(props);
-
-    return(
-
-        <div>propiedades2</div>
-    )
+  return (
+    <div>Propiedades2</div>
+  )
 }
-export default propiedades2
+
+export default Propiedades2
